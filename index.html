@@ -5,31 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link rel="stylesheet" href="./style/style.css">
     <title>Ejercico Restaurante</title>
 </head>
 <body>
 
-   <header 
-        style="font-family: fantasy;" style="background-color: brown ;">
-             <!--CABECERA-->
-       <div>
-         <h1>El sotanillo de Laura</h1>
-         <img 
-            src="./imagenes/header/Open.png" 
-            alt="Logotipo del Restaurante" 
-            width="200" 
-            heigh="200" 
-            />
-       </div>  
-                <!--NAVEGADOR-->
-        <nav 
-        style="background-color: #E9C891;
-        height: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-right: 0rem;"
-        >
+   <header>
+              <!--NAVEGADOR-->
+        <nav class="navigator">
+            <img 
+                src="./imagenes/cabecera/Open.png" 
+                alt="Cartel Open"
+                width="200px"
+                >
+
             <ul>
                 <a href="">Principal</a>
                 <a href="">Ayuda</a>
@@ -39,53 +29,26 @@
             </ul>
         </nav>
 
-        <img 
-        id="main-img"
-        src="./imagenes/header/cocinaMedit.png" 
-        type="png"
-        alt="imagen codigo HTML" 
-        style="display"
-        /> 
+    </header>       
 
-    </header> 
-    <main>          <!--CONCEPTO-->
+        <section class="container section1">
+            <h1>El Sotanillo De Laura</h1>
+            <p>Descubre la cocina mediterránea</p>
+        </section>
+            
+                                    <!--CONCEPTO-->
         <section>
-            <div>
+            <div class="container section2">
                 <h2>Concepto</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At corrupti dicta, a incidunt assumenda mollitia. Consectetur eos consequatur provident sequi? Autem voluptatem eaque sit dolore dolores omnis mollitia atque illo.</p>
-                <img 
-                    src="./imagenes/concepto/Pizarra.png" 
-                    alt="Pizarra"
-                    width="200" 
-                    heigh="200"
-                >
-                <img 
-                    src="./imagenes/concepto/fondoHojas.png" 
-                    alt="Hojas de fondo"
-                    width="400" 
-                    heigh="400"
-                >
             </div>
-        </section>
+        </section >
                         <!--IMAGENES DEL RESTAURANTE-->
-        <section>
-            <img 
-            src="./imagenes/fotosRest/DietaMed.jpg"  
-            alt="Dieta Mediteránea"
-            width="1000" 
-            heigh="1000"
-            >
-
+        <section class="container section3">
+            
             <img 
             src="./imagenes/fotosRest/Griega.jpg" 
             alt="Ensalada Griega"
-            width="200" 
-            heigh="200"
-            >
-
-            <img 
-            src="./imagenes/fotosRest/nidos.jpg" 
-            alt="Nidos de pasta"
             width="200" 
             heigh="200"
             >
@@ -96,14 +59,6 @@
             width="200" 
             heigh="200"
             >
-
-            <img 
-            src="./imagenes/fotosRest/pasta.jpg" 
-            alt="Pasta italiana"
-            width="200" 
-            heigh="200"
-            >
-
             <img 
             src="./imagenes/fotosRest/mesa.jpg" 
             alt="Mesa puesta para comer"
@@ -114,7 +69,7 @@
             <img 
             src="./imagenes/fotosRest/gazpacho.jpg" 
             alt="Gazpacho"
-            width="200" 
+            width="250" 
             heigh="200"
             >
 
@@ -125,74 +80,114 @@
             heigh="200"
             >
 
+            <img 
+            src="./imagenes/fotosRest/bodega.jpg" 
+            alt="Decoración con maceta y una calabaza"
+            width="250" 
+            heigh="200"
+            >
+
         </section>
 
                         <!--MENÚ-->
         
-        <section>
+        <section class="section4">
             <div>   
                 <p>VER LA CARTA DE DESAYUNOS</p>
                 <img 
                 src="./imagenes/menu/Menu.png" 
                 alt="Menu del Restaurante" 
-                width="600px" 
-                height="600px"
+                width="450px" 
+                height="450px"
                 >
             </div>
             
         </section>
                     <!--RESERVAS-->
-        <section>
+        <section class="section5">
             <div>   
-                <p>RESERVAS</p>
-                <img 
-                src="./imagenes/reserva/corchoVino.jpg" 
-                alt="Reserva del Restaurante" 
-                width="600px" 
-                height="600px">
+                <form action="https://reqres.in/api/users?page=2" method="get" autocomplete="off">
+                <fieldset>
+                    <legend>RESERVAS</legend>
+        
+                    <label for="number">Personas</label>
+                    <input type="number" required/>
+        
+                    <label for="hora">hora</label>
+                    <input type="time" id="time" name="time" required/>
+        
+                    <br/>
+                    <br/>
+                    <label for="tipoMesa">Tipo de mesa</label>
+                    <input type="text" id="tMesa" name="tipo_mesa" required/>
+        
+                    <button type="submit">Reservar</button>
+                    
+        
+                    <label for="name">Si no encuentra disponibilidad, apúntese en la lista de espera</label>
+                    <input type="text" id="name" name="user_name">
+           
+                    <label for="">¿Quieres ser cliente VIP?</label>
+                    <input type="checkbox" id="vip" name="user_vip">
+                    <br>
+                    
+                    <button type="submit">Lista de espera</button>
+                    <button type="submit">Solicitud de grupo</button>
+                </fieldset>
+        
+                <button type="submit">Enviar</button>
+            </form>
+                
             </div>
         </section>
 
-                    <!--BLOG-->
+                    <!--BLOG-->  
+        <section>
+            <div>
+                
+                <ul class="div-container">
 
-        <section>
-            <article>
-                <h1>Inauguración de El Sotanillo de Laura</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolor, unde omnis dolorem in sit sint temporibus rerum consequuntur eligendi nobis nihil sed? At eum voluptatem nihil. Ipsam, harum!</p>
-                <img 
-                src="./imagenes/Blog/inauguración/cocinero.jpg" 
-                alt="Cocinero"
-                width="200"
-                height="400"
-                >
-            </article>  
-        </section>
-            
-        <section>
-            <article>
-                <h1>Nuevo menú de invierno en El Sotanillo de Laura</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolor, unde omnis dolorem in sit sint temporibus rerum consequuntur eligendi nobis nihil sed? At eum voluptatem nihil. Ipsam, harum!</p>
-                <img 
-                src="./imagenes/Blog/Menú Invierno/restaurant.jpg" 
-                alt="Barra del restaurante vacía"
-                width="200"
-                height="400"
-                >
-            </article>      
-        </section>
-
-        <section>
-            <article>
-                <h1>Nuevo menú de oriental en El Sotanillo de Laura</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolor, unde omnis dolorem in sit sint temporibus rerum consequuntur eligendi nobis nihil sed? At eum voluptatem nihil. Ipsam, harum!</p>
-                <img 
-                src="./imagenes/Blog/Nueva carta/nuevaCarta.jpg" 
-                alt="Comida oriental estilo mediterráneo"
-                width="200"
-                height="400"
-                >
-            </article>      
-        </section>
+                    <li>
+                        <article>
+                            <h1>Inauguración de El Sotanillo de Laura</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolor, unde omnis dolorem in sit sint temporibus rerum consequuntur eligendi nobis nihil sed? At eum voluptatem nihil. Ipsam, harum!</p>
+                            <img 
+                                src="./imagenes/Blog/inauguración/cocinero.jpg" 
+                                alt="Cocinero"
+                                width="200"
+                                height="400"
+                                >
+                            </article>  
+                    </li>
+                    <li>
+                        <article>
+                            <h1>Nuevo menú de invierno en El Sotanillo de Laura</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolor, unde omnis dolorem in sit sint temporibus rerum consequuntur eligendi nobis nihil sed? At eum voluptatem nihil. Ipsam, harum!</p>
+                            <img 
+                                src="./imagenes/Blog/Menú Invierno/restaurant.jpg" 
+                                alt="Barra del restaurante vacía"
+                                width="200"
+                                height="400"
+                                >
+                        </article> 
+                    </li>
+                    <li>
+                        <article>
+                            <h1>Nuevo menú de oriental en El Sotanillo de Laura</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolor, unde omnis dolorem in sit sint temporibus rerum consequuntur eligendi nobis nihil sed? At eum voluptatem nihil. Ipsam, harum!</p>
+                            <img 
+                                src="./imagenes/Blog/Nueva carta/nuevaCarta.jpg" 
+                                alt="Comida oriental estilo mediterráneo"
+                                width="200"
+                                height="400"
+                                >
+                        </article> 
+                    </li>
+                    
+                </ul>
+            </div>
+                 
+        
         <div>
             <p>VER TODAS LAS ENTRADAS</p>
         </div>
@@ -201,13 +196,14 @@
             <div>   
                 <p>VEN CUANDO QUIERAS</p>
                 <img 
-                src="./imagenes/ven_cuando_quieras/RestBici.jpg" 
-                alt="Restaurante con bicicletas" 
-                width="900px" 
-                height="400px">
+                    src="./imagenes/ven_cuando_quieras/RestBici.jpg" 
+                    alt="Restaurante con bicicletas" 
+                    width="900px" 
+                    height="400px">
             </div>
         </section>
-    </main> 
+                               
+                                <!--FOOTER--> 
                                 <!--SÍGUENOS--> 
     <footer>
         <div>
