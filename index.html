@@ -21,33 +21,31 @@
                 >
 
             <ul>
-                <a href="">Principal</a>
-                <a href="">Ayuda</a>
-                <a href="">Contact</a>
-                <a href="">Fotos</a>
-                <a href="">Menú</a>
+                <a href="#section1">Principal</a>
+                <a href="#section2">Concepto</a>
+                <a href="#section5">Contact</a>
+                <a href="#section3">Fotos</a>
+                <a href="#section4">Menú</a>
             </ul>
         </nav>
 
     </header>       
 
-        <section class="container section1">
+        <section id="section1" class="container section1">
             <h1>El Sotanillo De Laura</h1>
             <p>Descubre la cocina mediterránea</p>
         </section>
             
                                     <!--CONCEPTO-->
-        <section>
-            <div class="container section2">
+        <section id="section2" class="container section2">
             <div class="container section2_2">
                 <h2>Concepto</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At corrupti dicta, a incidunt assumenda mollitia. Consectetur eos consequatur provident sequi? Autem voluptatem. 
-                </p>
-            </div>  
+                </p>  
             </div>
         </section >
                         <!--IMAGENES DEL RESTAURANTE-->
-        <section class="container section3">
+        <section id="section3" class="container section3">
             
             <img 
             src="./imagenes/fotosRest/Griega.jpg" 
@@ -108,7 +106,7 @@
 
                         <!--MENÚ-->
 
-        <section class="section4">
+        <section id="section4" class="container section4">
             <div>   
                 <img 
                 src="./imagenes/menu/Menu.png" 
@@ -118,14 +116,19 @@
                 >
             </div>   
         </section>
+            <br>
             <button>VER LA CARTA DE DESAYUNOS</button>
+            <br>
+            <br>
                     <!--RESERVAS-->
-        <section class="section5">
+        
+        <section id="section5" class="container section5">
             <div class="formulario">   
                 <form action="https://reqres.in/api/users?page=2" method="get" autocomplete="off">
                     
-                        <legend class="legend">RESERVAS</legend>
-            
+                        <h1>RESERVAS</h1>
+                        <br>
+                        <br>
                         <label for="number">Personas</label>
                         <input type="number" required/>
             
@@ -146,6 +149,7 @@
                         <label for="name">Si no encuentra disponibilidad, apúntese en la lista de espera</label>
                         <br>
                         <input type="text" id="name" name="user_name">
+                        
                         <br>
                         <label for="">¿Quieres ser cliente VIP?</label>
 
@@ -153,8 +157,9 @@
 
                         <br>
                     
-                        <button type="submit">Lista de espera</button>
-                        <br>
+                        <button>Lista de espera</button>
+                            <br>
+                            
                         <button type="submit">Solicitud de grupo</button>
                     </form>
             </div>
@@ -172,26 +177,28 @@
         <br>
 
                                             <!--BLOG-->  
+                <h1>Blog</h1>
+                <br>
+                <br>
         <section> 
                 <ul class="section6">
                     <li>
                         <article class="section6_1">
-                            <h1>Inauguración de El Sotanillo de Laura</h1>
+                            <h2>Inauguración de El Sotanillo de Laura</h2>
                             
                             </article>  
                     </li>
 
                     <li>
                         <article class="section6_2">
-                            <h1>Nuevo menú de invierno en El Sotanillo de Laura</h1>
+                            <h2>Nuevo menú de invierno en El Sotanillo de Laura</h2>
                             
                         </article> 
                     </li>
 
                     <li>
                         <article class="section6_3">
-                            <h1>Nuevo menú de oriental en El Sotanillo de Laura</h1>
-                            
+                            <h2>Nuevo menú de oriental en El Sotanillo de Laura</h2>    
                         </article> 
                     </li>  
                 </ul>           
@@ -211,7 +218,9 @@
                                
             <br>                    <!--FOOTER--> 
             <div>
-                <p>SÍGUENOS</p>
+                <h1>SÍGUENOS</h1>
+                <br>
+                <br>
                 <button>FACEBOOK</button>
                 <button>INSTAGRAM</button>
             </div> 
@@ -238,7 +247,7 @@
         <div>
             <p>contacto</p>
             <ul>
-                <li>c/ Del Piloro, 25</li>
+                <li>C/De la piruleta, 25</li>
                 <li>555555 Valencia</li>
                 <li>555-333-333</li>
                 <li>elsotanillo@elsotanillo.com</li>
