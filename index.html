@@ -39,8 +39,11 @@
                                     <!--CONCEPTO-->
         <section>
             <div class="container section2">
+            <div class="container section2_2">
                 <h2>Concepto</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At corrupti dicta, a incidunt assumenda mollitia. Consectetur eos consequatur provident sequi? Autem voluptatem eaque sit dolore dolores omnis mollitia atque illo.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At corrupti dicta, a incidunt assumenda mollitia. Consectetur eos consequatur provident sequi? Autem voluptatem. 
+                </p>
+            </div>  
             </div>
         </section >
                         <!--IMAGENES DEL RESTAURANTE-->
@@ -82,7 +85,21 @@
 
             <img 
             src="./imagenes/fotosRest/bodega.jpg" 
-            alt="Decoración con maceta y una calabaza"
+            alt="Bodega vinos"
+            width="250" 
+            heigh="200"
+            >
+
+            <img 
+            src="./imagenes/fotosRest/pasta.jpg" 
+            alt="Pasta italiana"
+            width="200" 
+            heigh="200"
+            >
+
+            <img 
+            src="./imagenes/fotosRest/nidos.jpg" 
+            alt="Nidos pasta"
             width="250" 
             heigh="200"
             >
@@ -90,127 +107,118 @@
         </section>
 
                         <!--MENÚ-->
-        
+
         <section class="section4">
             <div>   
-                <p>VER LA CARTA DE DESAYUNOS</p>
                 <img 
                 src="./imagenes/menu/Menu.png" 
                 alt="Menu del Restaurante" 
                 width="450px" 
                 height="450px"
                 >
-            </div>
-            
+            </div>   
         </section>
+            <button>VER LA CARTA DE DESAYUNOS</button>
                     <!--RESERVAS-->
         <section class="section5">
-            <div>   
+            <div class="formulario">   
                 <form action="https://reqres.in/api/users?page=2" method="get" autocomplete="off">
-                <fieldset>
-                    <legend>RESERVAS</legend>
-        
-                    <label for="number">Personas</label>
-                    <input type="number" required/>
-        
-                    <label for="hora">hora</label>
-                    <input type="time" id="time" name="time" required/>
-        
-                    <br/>
-                    <br/>
-                    <label for="tipoMesa">Tipo de mesa</label>
-                    <input type="text" id="tMesa" name="tipo_mesa" required/>
-        
-                    <button type="submit">Reservar</button>
                     
-        
-                    <label for="name">Si no encuentra disponibilidad, apúntese en la lista de espera</label>
-                    <input type="text" id="name" name="user_name">
-           
-                    <label for="">¿Quieres ser cliente VIP?</label>
-                    <input type="checkbox" id="vip" name="user_vip">
-                    <br>
+                        <legend class="legend">RESERVAS</legend>
+            
+                        <label for="number">Personas</label>
+                        <input type="number" required/>
+            
+                        <label for="hora">hora</label>
+                        <input type="time" id="time" name="time" required/>
+            
+                        <br/>
+                        <br/>
+                        <label for="tipoMesa">Tipo de mesa</label>
+                        <input type="text" id="tMesa" name="tipo_mesa" required/>
+
+                        <br>
+
+                        <button type="submit">Reservar</button>
+                        
+                        <br>
+
+                        <label for="name">Si no encuentra disponibilidad, apúntese en la lista de espera</label>
+                        <br>
+                        <input type="text" id="name" name="user_name">
+                        <br>
+                        <label for="">¿Quieres ser cliente VIP?</label>
+
+                        <input type="checkbox" id="vip" name="user_vip">
+
+                        <br>
                     
-                    <button type="submit">Lista de espera</button>
-                    <button type="submit">Solicitud de grupo</button>
-                </fieldset>
-        
-                <button type="submit">Enviar</button>
-            </form>
-                
+                        <button type="submit">Lista de espera</button>
+                        <br>
+                        <button type="submit">Solicitud de grupo</button>
+                    </form>
             </div>
-        </section>
-
-                    <!--BLOG-->  
-        <section>
-            <div>
-                
-                <ul class="div-container">
-
-                    <li>
-                        <article>
-                            <h1>Inauguración de El Sotanillo de Laura</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolor, unde omnis dolorem in sit sint temporibus rerum consequuntur eligendi nobis nihil sed? At eum voluptatem nihil. Ipsam, harum!</p>
-                            <img 
-                                src="./imagenes/Blog/inauguración/cocinero.jpg" 
-                                alt="Cocinero"
-                                width="200"
-                                height="400"
-                                >
-                            </article>  
-                    </li>
-                    <li>
-                        <article>
-                            <h1>Nuevo menú de invierno en El Sotanillo de Laura</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolor, unde omnis dolorem in sit sint temporibus rerum consequuntur eligendi nobis nihil sed? At eum voluptatem nihil. Ipsam, harum!</p>
-                            <img 
-                                src="./imagenes/Blog/Menú Invierno/restaurant.jpg" 
-                                alt="Barra del restaurante vacía"
-                                width="200"
-                                height="400"
-                                >
-                        </article> 
-                    </li>
-                    <li>
-                        <article>
-                            <h1>Nuevo menú de oriental en El Sotanillo de Laura</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi dolor, unde omnis dolorem in sit sint temporibus rerum consequuntur eligendi nobis nihil sed? At eum voluptatem nihil. Ipsam, harum!</p>
-                            <img 
-                                src="./imagenes/Blog/Nueva carta/nuevaCarta.jpg" 
-                                alt="Comida oriental estilo mediterráneo"
-                                width="200"
-                                height="400"
-                                >
-                        </article> 
-                    </li>
-                    
+            <div class="direccion">
+                <h2>EL SOTANILLO DE LAURA</h2>
+                <ul>
+                    <li>c/ De la piruleta, 25</li>
+                    <li>555555 Valencia</li>
+                    <li>555-333-333</li>
+                    <li>elsotanillo@elsotanillo.com</li>
                 </ul>
             </div>
-                 
+        </section>
+        <br>
+        <br>
+
+                                            <!--BLOG-->  
+        <section> 
+                <ul class="section6">
+                    <li>
+                        <article class="section6_1">
+                            <h1>Inauguración de El Sotanillo de Laura</h1>
+                            
+                            </article>  
+                    </li>
+
+                    <li>
+                        <article class="section6_2">
+                            <h1>Nuevo menú de invierno en El Sotanillo de Laura</h1>
+                            
+                        </article> 
+                    </li>
+
+                    <li>
+                        <article class="section6_3">
+                            <h1>Nuevo menú de oriental en El Sotanillo de Laura</h1>
+                            
+                        </article> 
+                    </li>  
+                </ul>           
+        </section>
+
         
-        <div>
-            <p>VER TODAS LAS ENTRADAS</p>
-        </div>
-                                 <!--VEN CUANDO QUIERAS-->
-        <section>
-            <div>   
-                <p>VEN CUANDO QUIERAS</p>
-                <img 
-                    src="./imagenes/ven_cuando_quieras/RestBici.jpg" 
-                    alt="Restaurante con bicicletas" 
-                    width="900px" 
-                    height="400px">
+            <div>
+                 <button>VER TODAS LAS ENTRADAS</button>
             </div>
+            <br>
+            <br>
+                                 <!--VEN CUANDO QUIERAS-->
+        <section class="section7">
+                <h2>EL SOTANILLO DE LAURA</h2>   
+                <p>VEN CUANDO QUIERAS</p>
         </section>
                                
-                                <!--FOOTER--> 
-                                <!--SÍGUENOS--> 
+            <br>                    <!--FOOTER--> 
+            <div>
+                <p>SÍGUENOS</p>
+                <button>FACEBOOK</button>
+                <button>INSTAGRAM</button>
+            </div> 
+            <br> 
+            <br>                       <!--SÍGUENOS--> 
     <footer>
-        <div>
-            <p>SÍGUENOS</p>
-            <button>FACEBOOK</button>
-            <button>INSTAGRAM</button>
-        </div>
+        
         <div>
             <p>ENLACES DE INTERÉS</p>
             <ul>
