@@ -9,43 +9,53 @@
 <link rel="stylesheet" href="./style/style.css">
     <title>Ejercico Restaurante</title>
 </head>
+
 <body>
-
-   <header>
+    <header>
+        <div>
               <!--NAVEGADOR-->
-        <nav class="navigator">
-            <img 
-                src="./imagenes/cabecera/Open.png" 
-                alt="Cartel Open"
-                width="200px"
-                >
-
-            <ul>
-                <a href="#section1">Principal</a>
-                <a href="#section2">Concepto</a>
-                <a href="#section5">Contact</a>
-                <a href="#section3">Fotos</a>
-                <a href="#section4">Menú</a>
-            </ul>
-        </nav>
-
+            <nav class="container-navigator">
+                <img 
+                    src="./imagenes/cabecera/Open.png" 
+                    alt="Cartel Open"
+                    width="200px"
+                    >
+                <ul>
+                    <li>
+                        <a href="#principal">Principal</a>
+                    </li>
+                    <li>
+                        <a href="#concepto">Concepto</a>
+                    </li>
+                    <li>
+                        <a href="#reservas">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#imagenes">Fotos</a>
+                    </li>
+                    <li>
+                        <a href="#menu">Menú</a>
+                    </li>   
+                </ul>
+            </nav>
+        </div>  
     </header>       
 
-        <section id="section1" class="container section1">
+        <section id="principal" class="container-principal">
             <h1>El Sotanillo De Laura</h1>
             <p>Descubre la cocina mediterránea</p>
         </section>
             
                                     <!--CONCEPTO-->
-        <section id="section2" class="container section2">
-            <div class="container section2_2">
+        <section class="container-concepto">
+            <div id="concepto" class="concepto">
                 <h2>Concepto</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At corrupti dicta, a incidunt assumenda mollitia. Consectetur eos consequatur provident sequi? Autem voluptatem. 
                 </p>  
             </div>
         </section >
                         <!--IMAGENES DEL RESTAURANTE-->
-        <section id="section3" class="container section3">
+        <section id="imagenes" class="container-imagenes">
             
             <img 
             src="./imagenes/fotosRest/Griega.jpg" 
@@ -106,7 +116,7 @@
 
                         <!--MENÚ-->
 
-        <section id="section4" class="container section4">
+        <section id="menu" class="container-menu">
             <div>   
                 <img 
                 src="./imagenes/menu/Menu.png" 
@@ -116,101 +126,70 @@
                 >
             </div>   
         </section>
-            <br>
-            <button>VER LA CARTA DE DESAYUNOS</button>
-            <br>
-            <br>
-                    <!--RESERVAS-->
+            <form action="./imagenes/desayunos/desayunos.png">
+                <button type="submit">VER LA CARTA DE DESAYUNOS</button>
+            </form>
+                                    <!--RESERVAS-->
         
-        <section id="section5" class="container section5">
+        <section id="reservas" class="container-reservas">
             <div class="formulario">   
-                <form action="https://reqres.in/api/users?page=2" method="get" autocomplete="off">
+                <form action="https://reqres.in/api/users" method="post" autocomplete="off" target="_blank">
                     
                         <h1>RESERVAS</h1>
                         <br>
                         <br>
-                        <label for="number">Personas</label>
-                        <input type="number" required/>
-            
-                        <label for="hora">hora</label>
-                        <input type="time" id="time" name="time" required/>
-            
-                        <br/>
-                        <br/>
-                        <label for="tipoMesa">Tipo de mesa</label>
-                        <input type="text" id="tMesa" name="tipo_mesa" required/>
+                        <label>Nombre</label>
+                        <input name="fname" type="text" required/>
 
-                        <br>
+                        <label>Personas</label>
+                        <input name="personas" type="number" required/>
+            
+                        <label>hora</label>
+                        <input type="time" id="time" name="time" required/>
 
                         <button type="submit">Reservar</button>
                         
-                        <br>
-
-                        <label for="name">Si no encuentra disponibilidad, apúntese en la lista de espera</label>
-                        <br>
-                        <input type="text" id="name" name="user_name">
-                        
-                        <br>
-                        <label for="">¿Quieres ser cliente VIP?</label>
-
-                        <input type="checkbox" id="vip" name="user_vip">
-
-                        <br>
-                    
-                        <button>Lista de espera</button>
-                            <br>
-                            
-                        <button type="submit">Solicitud de grupo</button>
                     </form>
             </div>
             <div class="direccion">
                 <h2>EL SOTANILLO DE LAURA</h2>
+                <br>
                 <ul>
                     <li>c/ De la piruleta, 25</li>
                     <li>555555 Valencia</li>
                     <li>555-333-333</li>
-                    <li>elsotanillo@elsotanillo.com</li>
+                    <li>
+                        <a href="mailto:elsotanillo@elsotanillo.com"">elsotanillo@elsotanillo.com</a>
+                    </li>
                 </ul>
             </div>
         </section>
         <br>
         <br>
 
-                                            <!--BLOG-->  
+                                        <!--BLOG-->  
                 <h1>Blog</h1>
                 <br>
                 <br>
-        <section> 
-                <ul class="section6">
-                    <li>
-                        <article class="section6_1">
-                            <h2>Inauguración de El Sotanillo de Laura</h2>
-                            
-                            </article>  
-                    </li>
+        <section id="blog"> 
+            <div>    
+                <article class="blog-post1">
+                    <h2>Inauguración de El Sotanillo de Laura</h2>
+                </article>
 
-                    <li>
-                        <article class="section6_2">
-                            <h2>Nuevo menú de invierno en El Sotanillo de Laura</h2>
-                            
-                        </article> 
-                    </li>
+                <article class="blog-post2">
+                    <h2>Nuevo menú de invierno en El Sotanillo de Laura</h2>           
+                </article> 
 
-                    <li>
-                        <article class="section6_3">
-                            <h2>Nuevo menú de oriental en El Sotanillo de Laura</h2>    
-                        </article> 
-                    </li>  
-                </ul>           
-        </section>
-
-        
-            <div>
-                 <button>VER TODAS LAS ENTRADAS</button>
-            </div>
-            <br>
-            <br>
-                                 <!--VEN CUANDO QUIERAS-->
+                <article class="blog-post3">
+                    <h2>Nuevo menú de oriental en El Sotanillo de Laura</h2>    
+                </article>   
+            </div>               
+            <form action="./imagenes/Blog/blog.jpg">
+                <button type="submit">VER TODAS LAS ENTRADAS</button> 
+            </form>   
+        </section> 
+                                <!--VEN CUANDO QUIERAS-->
         <section class="section7">
                 <h2>EL SOTANILLO DE LAURA</h2>   
                 <p>VEN CUANDO QUIERAS</p>
@@ -218,14 +197,18 @@
                                
             <br>                    <!--FOOTER--> 
             <div>
-                <h1>SÍGUENOS</h1>
+                <h1>Síguenos</h1>
                 <br>
                 <br>
-                <button>FACEBOOK</button>
-                <button>INSTAGRAM</button>
+                <form action="https://es-es.facebook.com/">  
+                    <button type="submit">FACEBOOK</button>
+                </form>
+                <form action="https://www.instagram.com/">
+                    <button type="submit">INSTAGRAM</button>
+                </form>
             </div> 
-            <br> 
-            <br>                       <!--SÍGUENOS--> 
+                <br> 
+                <br>                       <!--SÍGUENOS--> 
     <footer>
         
         <div>
@@ -250,7 +233,9 @@
                 <li>C/De la piruleta, 25</li>
                 <li>555555 Valencia</li>
                 <li>555-333-333</li>
-                <li>elsotanillo@elsotanillo.com</li>
+                <li>
+                    <a href="mailto:elsotanillo@elsotanillo.com"">elsotanillo@elsotanillo.com</a>
+                </li>
             </ul>
         </div>
     </footer>       

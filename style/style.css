@@ -6,16 +6,9 @@
     font-family: 'Comforter', cursive, sans-serif;
 }
 
-.navigator {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.container-navigator {
     background-color: #064635;
-    height: 100px;
-}
-
-nav img {
-    margin-top: 100px;
+    height: 100%;   
 }
 
 nav a {
@@ -23,16 +16,17 @@ nav a {
     font-size: 30px;
 }
 
-.navigator a:hover {
+nav a:hover {
     color: #F0BB62;
 }
 
-.navigator ul {
-    display:flex;
-    list-style-type: none; 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
     justify-content: space-evenly;
-    align-items: center; 
-    width: 100%;
+    align-items: center;   
 }
 
 /*.section1::before {
@@ -48,7 +42,7 @@ nav a {
     z-index: 2; 
     cursor: pointer; 
 }*/
-.section1 {
+.container-principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,30 +54,31 @@ nav a {
     height: 500px;     
 }
 
-.section1 h1 {
+.container-principal h1 {
     font-size: 80px;
     color: #F0BB62;
 }
 
-.section1 p {
+.container-principal p {
     font-size: 35px;
     color: #519259;
     /*text-shadow: rgb(160, 160, 32);*/
 }
 
-.section2 {
+.container-concepto {
     display: flex;
     align-items: center; 
     background-image: url("../imagenes/concepto/fondo_hojas_pizarra.png");
     flex-direction: column;
     justify-content: center; 
     background-repeat: no-repeat;
+    background-size: cover;
     width: 500px;
     height: 500px; 
     margin-left: 40%; 
 }
 
-.section2_2 {
+.concepto {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -97,22 +92,21 @@ nav a {
 
 
 
-.section3 {
+.container-imagenes {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
     align-content: space-around; 
-    align-items: normal;
+    align-items: center;
+    /*backdrop-filter: grayscale(30%);*/
     background-image: url("../imagenes/fotosRest/DietaMed.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /*backdrop-filter: grayscale(30%);*/
-    height: 500px; 
-    
+    height: 500px;   
 }
 
-.section4 {
+.container-menu {
     display: flex;
     background-repeat: no-repeat;
     flex-direction: column;
@@ -123,10 +117,11 @@ nav a {
     width: 500px;
     height: 500px; 
     margin-left: 40%; 
-    background-image: url("../imagenes/menu/fondoHojas.png");    
+    background-image: url("../imagenes/menu/fondoHojas.png"); 
+    background-size: cover;   
 }
 
-.section5 {
+.container-reservas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -138,50 +133,38 @@ nav a {
     background-size: cover;    
 }
 
-.section6 {
+#blog div {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: space-around;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-
-.section6_1 {
+ #blog article {
     display: flex;
     align-items: flex-start; 
+    flex-direction: column;
+    justify-content: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 500px; 
+    border-radius: 20px; 
+
+ }
+.blog-post1 {
     background-image: url("../imagenes/Blog/inauguración/cocinero.jpg");
-    flex-direction: column;
-    justify-content: center; 
-    background-repeat: no-repeat;
-
-    width: 200px;
-    height: 500px; 
-    margin-left: 40%; 
 }
 
-.section6_2 {
-    display: flex;
-    align-items: flex-start; 
-    background-image: url("../imagenes/Blog/Menú_invierno/restaurant.jpg");
-    flex-direction: column;
-    justify-content: center; 
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 500px; 
-    margin-left: 40%; 
+.blog-post2 { 
+    background-image: url("../imagenes/Blog/Menú_invierno/restaurant.jpg");  
 }
 
-.section6_3 {
-    display: flex;
-    align-items: flex-start; 
+.blog-post3 {
     background-image: url("../imagenes/Blog/Nueva_carta/nuevaCarta.jpg");
-    flex-direction: column;
-    justify-content: center; 
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 500px; 
-    margin-left: 40%; 
 }
 
 .section7 {
@@ -206,32 +189,26 @@ nav a {
 }
 
 
-legend {
-    color: #064635;
-    margin-left: 50%;
-}
+h1 {
+    display: flex;
+    align-items: center;
 
-h1{
-    display: inline-block;
-    position: relative;
-    /*text-align: center;*/
 }
  
 h1::after,h1::before {
     content: "";
-    position: absolute;
-    width: 120px;
-    height: 3px;
+    height: 1px;
+    width: 100px;
     background-color: currentColor;
-    top: 0.8em;
+    flex-grow: 1;
 }
 
 h1::before {
-    left: -140px;
+    margin-right: var(--h1-gap);
 }
 
 h1::after {
-    right: -140px;
+    margin-left: var(--h1-gap);
 
 }
 
@@ -243,8 +220,6 @@ h3  {
     color: #064635;
     margin-left: 45%;
 }
-
-
 
 li {
     color: rgb(240, 230, 230);
@@ -261,8 +236,11 @@ footer {
 button {
     background-color: #F0BB62 ;
     color: #064635;
-    margin-left: 50%;
-    margin-top: 10px;
     margin-bottom: 10px;
-
+    padding: 20px;
+    border-style: hidden;
+    border-radius: 20px;
+    width: 30%;
+    margin-left: 38%;
+    margin-top: 10px;
 }
