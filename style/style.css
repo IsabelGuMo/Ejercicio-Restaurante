@@ -6,9 +6,18 @@
     font-family: 'Comforter', cursive, sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
 .container-navigator {
-    background-color: #064635;
-    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #064635;  
 }
 
 nav a {
@@ -24,9 +33,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;   
+    justify-content:space-evenly;
 }
 
 /*.section1::before {
@@ -45,6 +52,8 @@ nav ul {
 .container-principal {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
     justify-content: center;
     align-items: center; 
     background-image: url("../imagenes/cabecera/cocinaMedit.jpeg");
@@ -75,7 +84,7 @@ nav ul {
     background-size: cover;
     width: 500px;
     height: 500px; 
-    margin-left: 40%; 
+    margin-left: 35%;
 }
 
 .concepto {
@@ -116,7 +125,7 @@ nav ul {
     align-items: center;
     width: 500px;
     height: 500px; 
-    margin-left: 40%; 
+    margin-left: 35%; 
     background-image: url("../imagenes/menu/fondoHojas.png"); 
     background-size: cover;   
 }
@@ -241,6 +250,6 @@ button {
     border-style: hidden;
     border-radius: 20px;
     width: 30%;
-    margin-left: 38%;
+    margin-left: 35%;
     margin-top: 10px;
 }
