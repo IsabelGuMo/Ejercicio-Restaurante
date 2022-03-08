@@ -12,7 +12,9 @@ body {
     flex-wrap: wrap;
 }
 
-
+@media (prefers-reduced-motion: no-preference) {
+  
+}
 .container-navigator {
     display: flex;
     flex-direction: column;
@@ -165,15 +167,15 @@ nav ul {
 
  }
 .blog-post1 {
-    background-image: url("../imagenes/Blog/inauguración/cocinero.jpg");
+    background-image: url(https://res.cloudinary.com/dayw7rwf5/image/upload/v1646682261/Restaurant-Exercice/cocinero_dk29x4.jpg);
 }
 
 .blog-post2 { 
-    background-image: url("../imagenes/Blog/Menú_invierno/restaurant.jpg");  
+    background-image: url(https://res.cloudinary.com/dayw7rwf5/image/upload/v1646682274/Restaurant-Exercice/restaurant_mcajzz.jpg);  
 }
 
 .blog-post3 {
-    background-image: url("../imagenes/Blog/Nueva_carta/nuevaCarta.jpg");
+    background-image: url(https://res.cloudinary.com/dayw7rwf5/image/upload/v1646682283/Restaurant-Exercice/nuevaCarta_xckaxh.jpg);
 }
 
 .section7 {
