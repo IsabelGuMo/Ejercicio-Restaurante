@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #064635; 
+    background-color: #FF9F9F; 
 }
 
 nav a {
@@ -86,7 +86,7 @@ nav ul {
     background-size: cover;
     width: 500px;
     height: 500px; 
-    background-image: url("../imagenes/concepto/fondo_hojas_pizarra.png");
+    background-image: url("../imagenes/concepto/fondo_hojas_pizarra.png");  
     margin-left: 30%;
 }
 
@@ -101,7 +101,6 @@ nav ul {
     padding: 150px;
     color: #F0BB62;
 }
-
 
 
 .container-imagenes {
@@ -241,12 +240,12 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #064635;
+    background: #FF9F9F;;
     height: 200px;
 }
 
 button {
-    background-color: #F0BB62 ;
+    background: #FF9F9F; ;
     color: #064635;
     margin-bottom: 10px;
     padding: 20px;
