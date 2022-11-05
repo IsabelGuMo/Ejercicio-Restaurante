@@ -164,8 +164,8 @@ nav ul {
     width: 200px;
     height: 500px; 
     border-radius: 20px; 
-
  }
+
 .blog-post1 {
     background-image: url(https://res.cloudinary.com/dayw7rwf5/image/upload/v1646682261/Restaurant-Exercice/cocinero_dk29x4.jpg);
 }
@@ -254,4 +254,8 @@ button {
     width: 30%;
     margin-left: 35%;
     margin-top: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  
 }
