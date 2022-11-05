@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -19,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #064635;  
+    background-color: #064635; 
 }
 
 nav a {
@@ -79,14 +80,14 @@ nav ul {
 .container-concepto {
     display: flex;
     align-items: center; 
-    background-image: url("../imagenes/concepto/fondo_hojas_pizarra.png");
     flex-direction: column;
     justify-content: center; 
     background-repeat: no-repeat;
     background-size: cover;
     width: 500px;
     height: 500px; 
-    margin-left: 35%;
+    background-image: url("../imagenes/concepto/fondo_hojas_pizarra.png");
+    margin-left: 30%;
 }
 
 .concepto {
@@ -126,11 +127,11 @@ nav ul {
     justify-content: center;
     align-items: center;
     width: 500px;
-    height: 500px; 
-    margin-left: 35%; 
+    height: 500px;  
     background-image: url("../imagenes/menu/fondoHojas.png"); 
-    background-size: cover;   
+    margin-left: 30%;
 }
+
 
 .container-reservas {
     display: flex;
