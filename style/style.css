@@ -20,16 +20,16 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #FF9F9F; 
+    background-color: #FF577F; 
 }
 
 nav a {
-    color:#519259;
+    color:#A7FFE4;
     font-size: 30px;
 }
 
 nav a:hover {
-    color: #F0BB62;
+    color: #FFEA11;
 }
 
 nav ul {
@@ -59,21 +59,24 @@ nav ul {
     text-align: center;
     justify-content: center;
     align-items: center; 
-    background-image: url("../imagenes/cabecera/cocinaMedit.jpeg");
-    background-repeat: no-repeat;
+    background-image: url("../imagenes/cabecera/cocinaMedit.webp");
+    background-repeat: no-repeat; 
+    background-position: center;
     background-size: cover;
-    /*backdrop-filter: grayscale(30%);*/
-    height: 500px;     
+    height: 550px;
+        
 }
+
+
 
 .container-principal h1 {
     font-size: 80px;
-    color: #F0BB62;
+    color: #3120E0;
 }
 
 .container-principal p {
     font-size: 35px;
-    color: #519259;
+    color: #8D9EFF;
     /*text-shadow: rgb(160, 160, 32);*/
 }
 
@@ -254,8 +257,4 @@ button {
     width: 30%;
     margin-left: 35%;
     margin-top: 10px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  
 }
